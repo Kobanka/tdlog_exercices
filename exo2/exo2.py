@@ -8,6 +8,10 @@ Examples:
     solution('abc', 'd') # returns false
 """
 
+def solution(string, ending):
+    return string.endswith(ending)
+    
+
 """
 Create unit test using those cases:
 fixed_tests_True = (
