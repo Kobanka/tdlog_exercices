@@ -1,10 +1,8 @@
 import unittest
-
 from exo3 import processLines
 
 
 class TestExo3(unittest.TestCase):
-
     def test_input_1(self):
         with open("/home/aniss/repos/tdlog_exercices/exo3/sample/input1.txt") as input1:
             lines = input1.readlines()
@@ -19,7 +17,6 @@ class TestExo3(unittest.TestCase):
         with open("/home/aniss/repos/tdlog_exercices/exo3/sample/input2.txt") as input2:
             lines = input2.readlines()
     
-
         with open("/home/aniss/repos/tdlog_exercices/exo3/sample/output2.txt") as output2:
             expected = output2.read()
     
@@ -28,5 +25,4 @@ class TestExo3(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
-
 
