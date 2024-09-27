@@ -25,21 +25,21 @@ fixed_tests_False = (
 
 
 fixed_tests_True = (
-    ("samurai","ai"),
-    ("ninja","ja"),
-    ("sensei","i"),
-    ("abc","abc"),
-    ("abcabc","bc"),
-    ("fails","ails"),
+    ("samurai", "ai"),
+    ("ninja", "ja"),
+    ("sensei", "i"),
+    ("abc", "abc"),
+    ("abcabc", "bc"),
+    ("fails", "ails"),
 )
 
 fixed_tests_False = (
-    ("sumo","omo"),
-    ("samurai","ra"),
-    ("abc","abcd"),
-    ("ails","fails"),
-    ("this","fails"),
-    ("spam","eggs")
+    ("sumo", "omo"),
+    ("samurai", "ra"),
+    ("abc", "abcd"),
+    ("ails", "fails"),
+    ("this", "fails"),
+    ("spam", "eggs")
 )
 
 

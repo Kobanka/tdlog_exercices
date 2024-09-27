@@ -1,25 +1,33 @@
 import unittest
+import os
 from exo3 import processLines
 
 
 class TestExo3(unittest.TestCase):
     def test_input_1(self):
-        with open("/home/aniss/repos/tdlog_exercices/exo3/sample/input1.txt") as input1:
+        base_dir = os.path.dirname(__file__)
+        input1_path = os.path.join(base_dir, "sample/input1.txt")
+        output1_path = os.path.join(base_dir, "sample/output1.txt")
+
+        with open(input1_path) as input1:
             lines = input1.readlines()
 
-        with open("/home/aniss/repos/tdlog_exercices/exo3/sample/output1.txt") as output1:
+        with open(output1_path) as output1:
             expected = output1.read()
 
         self.assertEqual(expected, processLines(lines))
 
-    # Ecrire une autre méthode pour vérifier le second use case
     def test_input_2(self):
-        with open("/home/aniss/repos/tdlog_exercices/exo3/sample/input2.txt") as input2:
+        base_dir = os.path.dirname(__file__)
+        input2_path = os.path.join(base_dir, "sample/input2.txt")
+        output2_path = os.path.join(base_dir, "sample/output2.txt")
+
+        with open(input2_path) as input2:
             lines = input2.readlines()
-    
-        with open("/home/aniss/repos/tdlog_exercices/exo3/sample/output2.txt") as output2:
+
+        with open(output2_path) as output2:
             expected = output2.read()
-    
+
         self.assertEqual(expected, processLines(lines))
 
 
